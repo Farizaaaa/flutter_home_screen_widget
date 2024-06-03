@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_home_screen_widget/pages/home_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,11 +11,6 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+        home: HomePage(title: "Flutter Home Screen Widget"));
   }
 }
